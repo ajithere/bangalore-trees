@@ -7,6 +7,7 @@ This has been built using MEAN(Mongodb, Express, Angular4 and Nodejs) Framework.
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.ng serve by default runs with environment as dev and hence loads the mock service which fetches data locally instead of getiing from the REST service. 
+npm start in package.json is configured to run node server.js which brings up express and mongodb. 
 
 ## Code scaffolding
 
