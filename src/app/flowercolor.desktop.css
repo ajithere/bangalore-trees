@@ -1,0 +1,12 @@
+.material-icons {
+                            font-weight: normal;
+                            font-style: normal;
+                            font-size: 30px;  /* Preferred icon size */
+                        }
+                .filterContainer {
+                    display: flex;
+                }
+                .buttons{
+                    display: flex;
+                    flex-wrap: wrap;
+                } 

@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import {TreeData} from './treeData'
-import {TreeListService} from './fetch-treelist.service'
+import { Component, Inject } from '@angular/core';
+import {TreeData} from './treeData';
+import {ITreeListService} from './fetch-treelist.service';
 
 @Component({
   selector: 'app-root',
@@ -11,14 +11,12 @@ import {TreeListService} from './fetch-treelist.service'
 export class AppComponent {
   treeDataList: TreeData[];
   
-  constructor(treeListService : TreeListService )
-  {
-
-    treeListService.getTreeData()
+  constructor(@Inject('ITreeListService') private treeListService: ITreeListService){
+       treeListService.getTreeData()
                     .subscribe(treeDataList => this.treeDataList = treeDataList,
-                                            err => console.log(err));
+                                            err => console.log(err)); 
   }
-  
+
   flowerColorSelected;
   flowerSizeSelected;
   flowerGroupSelected;

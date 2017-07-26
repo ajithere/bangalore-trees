@@ -5,22 +5,23 @@ import {TreeData} from './treeData'
     selector: 'tree-details',
     template: `
             <br><md-card class="example-card">
+            <div><h5 class="filterCount"> {{index}} of {{count}} </h5></div>
                 <md-card-header>
-                    <div md-card-avatar class="example-header-image"></div>
-                    <md-card-title><h1>{{treeData.CommonName + " " + treeData.FlowerColor + "-" + treeData.FlowerSize}}</h1></md-card-title>
-                    <md-card-subtitle><h2 style="color:grey"    >{{treeData.ScientificName}}</h2></md-card-subtitle>
-                </md-card-header><br>
-
-            <!--<img md-card-image src="https://material.angular.io/assets/img/examples/shiba1.jpg">-->
-            <!--    <img md-card-image src="http://lorempixel.com/100/100/people?">-->
-                <img md-card-image src={{treeData.Image}}>
-                
+                    
+                    <md-card-title>
+                        <h1>{{treeData.CommonName}}</h1>
+                    </md-card-title>
+                    <md-card-subtitle>
+                        <h2 style="color:grey">{{treeData.ScientificName}}</h2>
+                    </md-card-subtitle>
+                </md-card-header>
+                <img md-card-image border="0" class="img-responsive" src={{treeData.Image}}>
                 <md-card-content>
                     <p>
                         {{treeData.Description}}
                     </p>
                 </md-card-content>
-                
+                <div><h6 class="filterCount"> Image Copyright: A Ajit </h6></div>
                 <md-card-actions>
                     <button md-raised-button >View Details</button>
                 </md-card-actions>
@@ -28,13 +29,19 @@ import {TreeData} from './treeData'
             
         `,
     styles: [`
-                .example-header-image {
-                    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-                    background-size: cover;
+                .img-responsive {
+                    height: auto;
+                    width: 100%;
+                }
+                .filterCount{
+                    color:grey;
+                    float:right;
                 }            
             `]
-})
+})  
 export class TreeDetailsComponent {
     @Input() treeData: TreeData;
+    @Input() index;
+    @Input() count;
  
 }

@@ -1,0 +1,84 @@
+<!--This has been kept to take care of left and right navigation in desktop. In mobile
+we will have swipes and in desktop we will have left and right arrow buttons-->
+<md-card (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
+      <div><h5 style="color:grey;float:right">  {{filterCount + 1}} of 3</h5></div>
+      <md-card-header>
+          <md-card-title>
+              <h2 style="color:grey;float:left">Filter Wizard</h2>
+          </md-card-title>
+      </md-card-header>
+      <div  *ngIf="filterCount == 0"> 
+          <div class="filterContainer"> 
+              <div  class="leftArrow">
+                  <i class="material-icons" (click)="OnLeftClick()">keyboard_arrow_left</i>
+              </div>
+
+              <div class="question">                            
+                  <md-card-header>
+                      <md-card-title><h2 style="color:grey">Select the color of the flower you saw</h2></md-card-title>
+                  </md-card-header>
+              </div>
+
+              <div  class="rightArrow">
+                  <i class="material-icons" (click)="OnRightClick()">keyboard_arrow_right</i>
+              </div>
+          </div>
+          <div class="buttons">
+              <button style="background-color: red; color: white" md-raised-button (click)="OnRedClick()">RED</button>
+              <button style="background-color: blue; color: white" md-raised-button (click)="OnBlueClick()">BLUE</button>
+              <button style="background-color: green; color: white" md-raised-button (click)="OnGreenClick()">Green</button>
+              <button style="background-color: grey; color: white" md-raised-button (click)="OnResetClick()">Reset</button>
+          </div>
+      </div>
+
+      <div  *ngIf="filterCount == 1">
+          <div class="filterContainer">             
+              <div  class="leftArrow">
+                  <i class="material-icons" (click)="OnLeftClick()">keyboard_arrow_left</i>
+              </div>
+
+              <div class="question">                                                                        
+                  <md-card-header>
+                      <md-card-title><h2 style="color:grey">What is the approx size of the flower?</h2></md-card-title>
+                  </md-card-header>
+              </div>
+
+              <div  class="rightArrow">
+                  <i class="material-icons" (click)="OnRightClick()">keyboard_arrow_right</i>
+              </div>
+          </div>
+          <div class="buttons">
+              <button style="background-color: red; color: white" md-raised-button (click)="OnSmallClick()">Small</button>
+              <button style="background-color: blue; color: white" md-raised-button (click)="OnMediumClick()">Medium</button>
+              <button style="background-color: green; color: white" md-raised-button (click)="OnLargeClick()">Large</button>
+              <button style="background-color: grey; color: white" md-raised-button (click)="OnResetSizeClick()">Reset</button>
+          </div>
+      </div>
+      
+      <div *ngIf="filterCount == 2">                
+          <div class="filterContainer">             
+              <div  class="leftArrow">
+                  <i class="material-icons" (click)="OnLeftClick()">keyboard_arrow_left</i>
+              </div>
+
+              <div class="question">                                                                        
+                  <md-card-header>
+                      <md-card-title><h2 style="color:grey">Are they Single or in Cluster?</h2></md-card-title>
+                  </md-card-header>
+              </div>                
+
+              <div  class="rightArrow">
+                  <i class="material-icons" (click)="OnRightClick()">keyboard_arrow_right</i>
+              </div>
+          </div>
+          <div class="buttons">
+              <button style="background-color: red; color: white" md-raised-button (click)="OnSingleClick()">Single</button>
+              <button style="background-color: blue; color: white" md-raised-button (click)="OnClusterClick()">Cluster</button>
+              <button style="background-color: blue; color: white" md-raised-button (click)="OnResetGroupClick()">Reset</button>
+          </div>
+      </div>
+                  
+</md-card>
+      
+    
+
