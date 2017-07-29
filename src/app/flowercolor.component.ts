@@ -3,7 +3,7 @@ import {Component,Output, EventEmitter} from '@angular/core'
 @Component({
     selector: 'flower-color',
     template: `
-        <md-card (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
+        <md-card (swipeleft)="swipe(0, $event.type)" (swiperight)="swipe(0, $event.type)">
             <div><h5 style="color:grey;float:right">  {{filterCount + 1}} of 3</h5></div>
             <md-card-header>
                 <md-card-title>
@@ -19,8 +19,8 @@ import {Component,Output, EventEmitter} from '@angular/core'
                     </div>
                 </div>
                 <div class="buttons">
-                    <button style="background-color: red; color: white" md-raised-button (click)="OnRedClick()">RED</button>
-                    <button style="background-color: blue; color: white" md-raised-button (click)="OnBlueClick()">BLUE</button>
+                    <button style="background-color: red; color: white" md-raised-button (click)="OnRedClick()">Red</button>
+                    <button style="background-color: blue; color: white" md-raised-button (click)="OnBlueClick()">Blue</button>
                     <button style="background-color: green; color: white" md-raised-button (click)="OnGreenClick()">Green</button>
                     <button style="background-color: grey; color: white" md-raised-button (click)="OnResetClick()">Reset</button>
                 </div>
