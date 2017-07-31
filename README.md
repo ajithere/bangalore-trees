@@ -1,9 +1,9 @@
 # BangaloreTrees
 
-##Motivation 
+## Motivation 
 How can a common man identify a flowering tree in bangalore in less than 20 seconds?
 
-##Solution Direction
+## Solution Direction
 Provide wizard based filter which will easily help narrow down the tree based on parameters that is easily understood
 by a common man like, flower color, size, smell, shape, fruit color, size smell, shape.
 As the project evolves, i have a vision to grow this app to be a one stop shop for all the interesting information related to trees of bangalore.
