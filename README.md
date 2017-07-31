@@ -1,13 +1,18 @@
-# Bangalore Trees
+# BangaloreTrees
 
+##Motivation 
+How can a common man identify a flowering tree in bangalore in less than 20 seconds?
+
+##Solution Direction
+Provide wizard based filter which will easily help narrow down the tree based on parameters that is easily understood
+by a common man like, flower color, size, smell, shape, fruit color, size smell, shape.
+As the project evolves, i have a vision to grow this app to be a one stop shop for all the interesting information related to trees of bangalore.
+ 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.0.
-Please add .angular-cli.json from angularsite before doing npm install.
-This has been built using MEAN(Mongodb, Express, Angular4 and Nodejs) Framework. Heroku cloud is used to host this webapp. 
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.ng serve by default runs with environment as dev and hence loads the mock service which fetches data locally instead of getiing from the REST service. 
-npm start in package.json is configured to run node server.js which brings up express and mongodb. 
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
@@ -15,7 +20,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build. Building with --env=prod ensures that actual REST service is invoked. When commit is made into heroku cloud, it automatically triggers a production build ensuring the REST API is called
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 

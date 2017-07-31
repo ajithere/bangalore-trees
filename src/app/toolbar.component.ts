@@ -41,5 +41,7 @@ import {Component} from '@angular/core'
            `]
 })
 export class ToolbarComponent {
+	OnSearch(){
+	}
     
 }
