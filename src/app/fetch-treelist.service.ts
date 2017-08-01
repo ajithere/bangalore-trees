@@ -49,7 +49,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Oval woody pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/1.jpg", 
+                "Image": "../assets/1.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -657,7 +657,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "round berry",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/33.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -676,7 +676,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "round berry",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/34.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -695,7 +695,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "round berry",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/35.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -733,7 +733,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long flat dry pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/37.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -752,7 +752,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long cylindrical dry pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/38.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -771,7 +771,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Thin bean like",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/39.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -790,7 +790,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Large capsule pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/40.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -809,7 +809,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long cylindrical dry pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/41.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -828,7 +828,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Spherical woody splitting open",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/42.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -847,7 +847,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long cylindrical dry pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/43.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -866,7 +866,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Long bulging dry pod",
                 "EdibleFruit": "Y",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/44.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -904,12 +904,12 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long fleshy pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/46.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
             {
-                "ScientificName": "Magnolia champaka",
+                "ScientificName": "Michelia champaka",
                 "CommonName": "Champak",
                 "Order1":"3",
                 "Order2":"32",
@@ -923,7 +923,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Spherical fleshy",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/47.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -942,7 +942,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long flat dry pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/48.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -961,7 +961,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "round winged pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/49.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -980,7 +980,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long flat dry pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/50.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -999,7 +999,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long cylindrical fleshy pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/51.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -1018,7 +1018,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Spherical fleshy",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/52.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -1056,7 +1056,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Large, lumpy, barrel or pear shaped fleshy",
                 "EdibleFruit": "Y",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/54.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -1075,7 +1075,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Thin flat pods",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/55.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -1094,7 +1094,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Spherical fleshy",
                 "EdibleFruit": "Y",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/56.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -1113,7 +1113,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "round berry",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/57.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -1132,7 +1132,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Ovoid dry",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/58.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
@@ -1151,9 +1151,9 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "long flattish narrow pod",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/59.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
-                "RareTrees": ""
+                "RareTrees": "Y"
             },
             {
                 "ScientificName": "Acacia nilotica",
@@ -1170,7 +1170,7 @@ export class  MockTreeListService implements ITreeListService{
                 "FruitShape": "Beaded pods",
                 "EdibleFruit": "N",
                 "FeatureTags": "",
-                "Image": "../assets/Default.JPG", 
+                "Image": "../assets/60.JPG", 
 		"Description": "This is a sample text which needs to be replaced for each tree later",
                 "RareTrees": ""
             },
