@@ -14,7 +14,8 @@ export class TreeData {
     public FruitShape: string,
     public EdibleFruit: string,
     public FeatureTags: string,
-    public Image: string,
+    public Image: string[],
+    public ImageCredit: string[],
     public Description: string,
     public RareTrees: string){
 

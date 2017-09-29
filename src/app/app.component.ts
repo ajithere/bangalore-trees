@@ -20,20 +20,37 @@ export class AppComponent {
   flowerColorSelected;
   flowerSizeSelected;
   flowerGroupSelected;
+  flowerSmellSelected;
+  toggleFlag;
+  
+  toggleState(){
+        this.toggleFlag = (this.toggleFlag === 'active' ? 'inactive' : 'active');
+  }
 
   onFlowerColorFilter($event)
   {
-      this.flowerColorSelected = $event;
+        this.flowerColorSelected = $event;
+        this.toggleState();
+        setTimeout(() => this.toggleState(), 200);
            
   }
   onFlowerSizeFilter($event)
   {
-      this.flowerSizeSelected = $event;
+        this.flowerSizeSelected = $event;
+        this.toggleState();
+        setTimeout(() => this.toggleState(), 200);      
       
   }
   onFlowerGroupFilter($event)
   {
-      this.flowerGroupSelected = $event;
+        this.flowerGroupSelected = $event;
+        this.toggleState();
+        setTimeout(() => this.toggleState(), 200);        
   }
-  
+  onFlowerSmellFilter($event)
+  {
+        this.flowerSmellSelected = $event;
+        this.toggleState();
+        setTimeout(() => this.toggleState(), 200);      
+  }
 }

@@ -4,7 +4,7 @@ import {Component} from '@angular/core'
     selector: 'toolbar-default',
     template: `
         <md-toolbar color="primary">
-            <i class="material-icons app-toolbar-menu">face</i>
+            
                 Trees of Bangalore
             <span class="app-toolbar-filler"></span>
             <button class="app-icon-button1" (click)="OnSearch()">
@@ -35,6 +35,11 @@ import {Component} from '@angular/core'
                     padding: 0;
                     text-align: left;
                     text-decoration: none;
+                }
+                .material-icons{
+                    margin-top:15px;
+                    margin-right:-15px;
+                    margin-bottom:auto;
                 }
 
 
