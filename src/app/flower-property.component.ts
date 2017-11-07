@@ -6,7 +6,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
-import {MdSnackBar} from '@angular/material';
+import {MatSnackBar} from '@angular/material';
 
 @Component({
     selector: 'flower-property',
@@ -62,7 +62,6 @@ import {MdSnackBar} from '@angular/material';
                 </div>
                 <div class="buttons">
                         <mdl-radio name="group1" value="small"  [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Small</mdl-radio>
-                        <mdl-radio name="group1" value="medium" [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Medium</mdl-radio><br>
                         <mdl-radio name="group1" value="large"  [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Large</mdl-radio>
                         <mdl-radio name="group1" value="Reset" [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Not Sure</mdl-radio>                        
                 </div>
@@ -153,7 +152,7 @@ import {MdSnackBar} from '@angular/material';
 })
 export class FlowerPropertyComponent {
 
-    constructor(public toast: MdSnackBar) {
+    constructor(public toast: MatSnackBar) {
 
     }   
     radioOptionSize: string;

@@ -6,6 +6,7 @@ export class FilterFlowerColorPipe implements PipeTransform   {
         if(!values || !filterString)
             return values;
         var str = JSON.parse(JSON.stringify(filterString));
+        
         if(str.color == "Reset")
             return values;
         var actStr = JSON.parse(JSON.stringify(values[0]));    

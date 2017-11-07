@@ -1,4 +1,4 @@
-import {Component} from '@angular/core'
+import {Component,Output, EventEmitter} from '@angular/core'
 
 @Component({
     selector: 'toolbar-default',
@@ -6,6 +6,9 @@ import {Component} from '@angular/core'
         <md-toolbar color="primary">
             
                 Trees of Bangalore
+<!--            <button class="app-icon-button2" (click)="OnClear()">
+            <i class="material-icons app-toolbar-menu">clear_all</i>
+            </button> -->
             <span class="app-toolbar-filler"></span>
             <button class="app-icon-button1" (click)="OnSearch()">
             <i class="material-icons app-toolbar-menu">search</i>
@@ -20,7 +23,7 @@ import {Component} from '@angular/core'
                     padding: 0 10px 0 1px;
                     color: white;
                 }
-                .app-icon-button, .app-icon-button1{
+                .app-icon-button2, .app-icon-button1{
                     box-shadow: none;
                     user-select: none;
                     background: none;
@@ -46,7 +49,11 @@ import {Component} from '@angular/core'
            `]
 })
 export class ToolbarComponent {
+    @Output() btnClick = new EventEmitter();
+
 	OnSearch(){
 	}
-    
+    OnClear(){
+        this.btnClick.emit({color: "Reset",flwsize: "Reset",ClusterOrSingle:"Reset",flwsmell:"Reset"});
+	}
 }

@@ -1,5 +1,5 @@
 <!--The whole content below can be removed with the new code.-->
-<toolbar-default></toolbar-default>
+<toolbar-default (btnClick)="onClearAll($event)"></toolbar-default>
 <flower-property (btnClick)="onFlowerColorFilter($event)" (btnClick1)="onFlowerSizeFilter($event)" 
 (btnClick2)="onFlowerGroupFilter($event)" (btnClick3)="onFlowerSmellFilter($event)" ></flower-property>
 <div *ngFor="let treeData of treeDataList | filterFlowerColor:flowerColorSelected 
