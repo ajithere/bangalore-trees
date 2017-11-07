@@ -3,7 +3,7 @@ import {Component,Output, EventEmitter} from '@angular/core'
 @Component({
     selector: 'toolbar-default',
     template: `
-        <md-toolbar color="primary">
+        <mat-toolbar color="primary">
             
                 Trees of Bangalore
 <!--            <button class="app-icon-button2" (click)="OnClear()">
@@ -13,7 +13,7 @@ import {Component,Output, EventEmitter} from '@angular/core'
             <button class="app-icon-button1" (click)="OnSearch()">
             <i class="material-icons app-toolbar-menu">search</i>
             </button>
-        </md-toolbar>
+        </mat-toolbar>
         `,
     styles: [`
                 .app-toolbar-filler {

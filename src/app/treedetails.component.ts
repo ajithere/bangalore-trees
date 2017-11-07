@@ -12,31 +12,31 @@ import {
     selector: 'tree-details',
     template: `
             
-            <p><md-card class="example-card" >
+            <p><mat-card class="example-card" >
                 <div><h6 class="filterCount" [@filterAnim]="toggleFlag"> {{index}} of {{count}} </h6></div>
-                <md-card-header>
+                <mat-card-header>
                     
-                    <md-card-title class="title">
+                    <mat-card-title class="title">
                         <h2>{{treeData.CommonName}}</h2>
-                    </md-card-title>
+                    </mat-card-title>
                     
-                    <md-card-subtitle class="subtitle">
+                    <mat-card-subtitle class="subtitle">
                         <h3 style="color:grey">{{treeData.ScientificName}}</h3>
-                    </md-card-subtitle>
+                    </mat-card-subtitle>
                     
-                </md-card-header>
+                </mat-card-header>
               
-                <img md-card-image border="0" class="img-responsive" src={{treeData?.Image[imageIndex]}}>
-                <md-card-content class="content">
+                <img mat-card-image border="0" class="img-responsive" src={{treeData?.Image[imageIndex]}}>
+                <mat-card-content class="content">
                     <p>
                         {{treeData.Description}}
                     </p>
-                </md-card-content>
+                </mat-card-content>
                 <div><h6 class="imageCopyright"> Img Credit: {{treeData?.ImageCredit[imageIndex]}}<br> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a></h6></div>
-                <md-card-actions>
-                    <button md-raised-button class="moreImages" (click)="OnMoreImagesClick()">More Images</button>
-                </md-card-actions>
-            </md-card></p>
+                <mat-card-actions>
+                    <button mat-raised-button class="moreImages" (click)="OnMoreImagesClick()">More Images</button>
+                </mat-card-actions>
+            </mat-card></p>
             
         `,
     styles: [`

@@ -1,12 +1,12 @@
 <!--This has been kept to take care of left and right navigation in desktop. In mobile
 we will have swipes and in desktop we will have left and right arrow buttons-->
-<md-card (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
+<mat-card (swipeleft)="swipe(idx, $event.type)" (swiperight)="swipe(idx, $event.type)">
       <div><h5 style="color:grey;float:right">  {{filterCount + 1}} of 3</h5></div>
-      <md-card-header>
-          <md-card-title>
+      <mat-card-header>
+          <mat-card-title>
               <h2 style="color:grey;float:left">Filter Wizard</h2>
-          </md-card-title>
-      </md-card-header>
+          </mat-card-title>
+      </mat-card-header>
       <div  *ngIf="filterCount == 0"> 
           <div class="filterContainer"> 
               <div  class="leftArrow">
@@ -14,9 +14,9 @@ we will have swipes and in desktop we will have left and right arrow buttons-->
               </div>
 
               <div class="question">                            
-                  <md-card-header>
-                      <md-card-title><h2 style="color:grey">Select the color of the flower you saw</h2></md-card-title>
-                  </md-card-header>
+                  <mat-card-header>
+                      <mat-card-title><h2 style="color:grey">Select the color of the flower you saw</h2></mat-card-title>
+                  </mat-card-header>
               </div>
 
               <div  class="rightArrow">
@@ -24,10 +24,10 @@ we will have swipes and in desktop we will have left and right arrow buttons-->
               </div>
           </div>
           <div class="buttons">
-              <button style="background-color: red; color: white" md-raised-button (click)="OnRedClick()">Red</button>
-              <button style="background-color: blue; color: white" md-raised-button (click)="OnBlueClick()">Blue</button>
-              <button style="background-color: green; color: white" md-raised-button (click)="OnGreenClick()">Green</button>
-              <button style="background-color: grey; color: white" md-raised-button (click)="OnResetClick()">Reset</button>
+              <button style="background-color: red; color: white" mat-raised-button (click)="OnRedClick()">Red</button>
+              <button style="background-color: blue; color: white" mat-raised-button (click)="OnBlueClick()">Blue</button>
+              <button style="background-color: green; color: white" mat-raised-button (click)="OnGreenClick()">Green</button>
+              <button style="background-color: grey; color: white" mat-raised-button (click)="OnResetClick()">Reset</button>
           </div>
       </div>
 
@@ -38,9 +38,9 @@ we will have swipes and in desktop we will have left and right arrow buttons-->
               </div>
 
               <div class="question">                                                                        
-                  <md-card-header>
-                      <md-card-title><h2 style="color:grey">What is the approx size of the flower?</h2></md-card-title>
-                  </md-card-header>
+                  <mat-card-header>
+                      <mat-card-title><h2 style="color:grey">What is the approx size of the flower?</h2></mat-card-title>
+                  </mat-card-header>
               </div>
 
               <div  class="rightArrow">
@@ -48,10 +48,10 @@ we will have swipes and in desktop we will have left and right arrow buttons-->
               </div>
           </div>
           <div class="buttons">
-              <button style="background-color: red; color: white" md-raised-button (click)="OnSmallClick()">Small</button>
-              <button style="background-color: blue; color: white" md-raised-button (click)="OnMediumClick()">Medium</button>
-              <button style="background-color: green; color: white" md-raised-button (click)="OnLargeClick()">Large</button>
-              <button style="background-color: grey; color: white" md-raised-button (click)="OnResetSizeClick()">Reset</button>
+              <button style="background-color: red; color: white" mat-raised-button (click)="OnSmallClick()">Small</button>
+              <button style="background-color: blue; color: white" mat-raised-button (click)="OnMediumClick()">Medium</button>
+              <button style="background-color: green; color: white" mat-raised-button (click)="OnLargeClick()">Large</button>
+              <button style="background-color: grey; color: white" mat-raised-button (click)="OnResetSizeClick()">Reset</button>
           </div>
       </div>
       
@@ -62,9 +62,9 @@ we will have swipes and in desktop we will have left and right arrow buttons-->
               </div>
 
               <div class="question">                                                                        
-                  <md-card-header>
-                      <md-card-title><h2 style="color:grey">Are they Single or in Cluster?</h2></md-card-title>
-                  </md-card-header>
+                  <mat-card-header>
+                      <mat-card-title><h2 style="color:grey">Are they Single or in Cluster?</h2></mat-card-title>
+                  </mat-card-header>
               </div>                
 
               <div  class="rightArrow">
@@ -72,13 +72,13 @@ we will have swipes and in desktop we will have left and right arrow buttons-->
               </div>
           </div>
           <div class="buttons">
-              <button style="background-color: red; color: white" md-raised-button (click)="OnSingleClick()">Single</button>
-              <button style="background-color: blue; color: white" md-raised-button (click)="OnClusterClick()">Cluster</button>
-              <button style="background-color: blue; color: white" md-raised-button (click)="OnResetGroupClick()">Reset</button>
+              <button style="background-color: red; color: white" mat-raised-button (click)="OnSingleClick()">Single</button>
+              <button style="background-color: blue; color: white" mat-raised-button (click)="OnClusterClick()">Cluster</button>
+              <button style="background-color: blue; color: white" mat-raised-button (click)="OnResetGroupClick()">Reset</button>
           </div>
       </div>
                   
-</md-card>
+</mat-card>
       
     
 

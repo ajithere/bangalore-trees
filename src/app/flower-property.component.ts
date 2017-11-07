@@ -12,42 +12,42 @@ import {MatSnackBar} from '@angular/material';
     selector: 'flower-property',
     template: `
  
-        <p><md-card class="filterCard" (swipeleft)="swipe(0, $event.type)" (swiperight)="swipe(0, $event.type)">
+        <p><mat-card class="filterCard" (swipeleft)="swipe(0, $event.type)" (swiperight)="swipe(0, $event.type)">
             <div class="filterCountNum" [@flowerColorAnim]="state"><h6>  {{filterCount + 1}} of 4</h6></div>
   
             <div  *ngIf="filterCount == 0" [@fadeInOut]> 
                 <div class="filterContainer"> 
-                         <md-card-header>
-                            <md-card-title class="title"><h3>Select closest flower color shade</h3></md-card-title>
-                        </md-card-header>
+                         <mat-card-header>
+                            <mat-card-title class="title"><h3>Select closest flower color shade</h3></mat-card-title>
+                        </mat-card-header>
                 </div>
                 <div>
-                    <button id="1" style="background-color: #e0e0e0; color: red" md-icon-button (click)="OnFlowerColorClick('1', 'Red')" [@flowerColorAnim]="state" >
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="1" style="background-color: #e0e0e0; color: red" mat-icon-button (click)="OnFlowerColorClick('1', 'Red')" [@flowerColorAnim]="state" >
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button>
-                    <button id="2" style="background-color: #e0e0e0; color: MediumPurple" md-icon-button (click)="OnFlowerColorClick('2', 'Purple')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="2" style="background-color: #e0e0e0; color: MediumPurple" mat-icon-button (click)="OnFlowerColorClick('2', 'Purple')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button>
-                    <button id="3" style="background-color: #e0e0e0; color: #98FB98" md-icon-button (click)="OnFlowerColorClick('3', 'Green')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="3" style="background-color: #e0e0e0; color: #98FB98" mat-icon-button (click)="OnFlowerColorClick('3', 'Green')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button><br>
-                    <button id="4" style="background-color: #e0e0e0; color: #FF69B4" md-icon-button (click)="OnFlowerColorClick('4', 'Pink')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="4" style="background-color: #e0e0e0; color: #FF69B4" mat-icon-button (click)="OnFlowerColorClick('4', 'Pink')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button>
-                    <button id="5" style="background-color: #e0e0e0; color: #FFFF00" md-icon-button (click)="OnFlowerColorClick('5', 'Yellow')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="5" style="background-color: #e0e0e0; color: #FFFF00" mat-icon-button (click)="OnFlowerColorClick('5', 'Yellow')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button>
-                    <button id="6" style="background-color: #e0e0e0; color: #F27B00" md-icon-button (click)="OnFlowerColorClick('6', 'Orange')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="6" style="background-color: #e0e0e0; color: #F27B00" mat-icon-button (click)="OnFlowerColorClick('6', 'Orange')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button><br>
-                    <button id="7" style="background-color: #e0e0e0; color: #FFFAF0" md-icon-button (click)="OnFlowerColorClick('7', 'White')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="7" style="background-color: #e0e0e0; color: #FFFAF0" mat-icon-button (click)="OnFlowerColorClick('7', 'White')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button>
-                    <button id="8" style="background-color: #e0e0e0; color: #8B4513" md-icon-button (click)="OnFlowerColorClick('8', 'Brown')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">lens</md-icon>
+                    <button id="8" style="background-color: #e0e0e0; color: #8B4513" mat-icon-button (click)="OnFlowerColorClick('8', 'Brown')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">lens</mat-icon>
                     </button>
-                    <button id="9" style="background-color: #e0e0e0; color: grey" md-icon-button (click)="OnFlowerColorClick('9', 'Reset')">
-                        <md-icon class="md-24" aria-label="Example icon-button with a heart icon">restore_page</md-icon>
+                    <button id="9" style="background-color: #e0e0e0; color: grey" mat-icon-button (click)="OnFlowerColorClick('9', 'Reset')">
+                        <mat-icon class="mat-24" aria-label="Example icon-button with a heart icon">restore_page</mat-icon>
                     </button>
                 </div>
             </div>
@@ -55,9 +55,9 @@ import {MatSnackBar} from '@angular/material';
             <div  *ngIf="filterCount == 1" [@fadeInOut]>
                 <div class="filterContainer">             
                     <div class="question">                                                                        
-                        <md-card-header>
-                            <md-card-title class="title"><h3>Select flower size?</h3></md-card-title>
-                        </md-card-header>
+                        <mat-card-header>
+                            <mat-card-title class="title"><h3>Select flower size?</h3></mat-card-title>
+                        </mat-card-header>
                     </div>
                 </div>
                 <div class="buttons">
@@ -70,9 +70,9 @@ import {MatSnackBar} from '@angular/material';
             <div *ngIf="filterCount == 2" [@fadeInOut]>                
                 <div class="filterContainer">             
                     <div class="question">                                                                        
-                        <md-card-header>
-                            <md-card-title class="title"><h3>Flowers in Cluster or Individual?</h3></md-card-title>
-                        </md-card-header>
+                        <mat-card-header>
+                            <mat-card-title class="title"><h3>Flowers in Cluster or Individual?</h3></mat-card-title>
+                        </mat-card-header>
                     </div>                
                 </div>
                 <div class="buttons">
@@ -84,9 +84,9 @@ import {MatSnackBar} from '@angular/material';
             <div *ngIf="filterCount == 3" [@fadeInOut]>                
                 <div class="filterContainer">             
                     <div>                                                                        
-                        <md-card-header>
-                            <md-card-title class="title"><h3>Are the flowers fragrant?</h3></md-card-title>
-                        </md-card-header>
+                        <mat-card-header>
+                            <mat-card-title class="title"><h3>Are the flowers fragrant?</h3></mat-card-title>
+                        </mat-card-header>
                     </div>                
                 </div>
                 <div class="buttons">
@@ -98,14 +98,14 @@ import {MatSnackBar} from '@angular/material';
                 </div>
             </div>
 
-        </md-card>
-        <md-progress-bar color="primary"
+        </mat-card>
+        <mat-progress-bar color="primary"
           class="example-margin"
           [color]="color"
           [mode]="mode"
           [value]="value">
           
-        </md-progress-bar></p>            
+        </mat-progress-bar></p>            
         `,
     styles: [`
                 p{
@@ -244,7 +244,7 @@ export class FlowerPropertyComponent {
 @Component({
     selector: 'toast',
     template: `
-        <md-chip style="background-color: #424242; color: white; font-size: 15px">Swipe Right or left for more filter options</md-chip>
+        <mat-chip style="background-color: #424242; color: white; font-size: 15px">Swipe Right or left for more filter options</mat-chip>
    `
 })
 export class ToastComponent{}
