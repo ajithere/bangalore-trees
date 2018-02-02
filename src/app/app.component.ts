@@ -19,7 +19,7 @@ export class AppComponent {
 
   flowerColorSelected;
   flowerSizeSelected;
-  flowerGroupSelected;
+  //flowerGroupSelected;
   flowerSmellSelected;
   toggleFlag;
   
@@ -30,7 +30,7 @@ export class AppComponent {
   onClearAll($event)
   {
       this.onFlowerColorFilter($event);
-      this.onFlowerGroupFilter($event);
+//      this.onFlowerGroupFilter($event);
       this.onFlowerSizeFilter($event);
       this.onFlowerSmellFilter($event);
   }
@@ -51,12 +51,12 @@ export class AppComponent {
       
   }
 
-  onFlowerGroupFilter($event)
-  {
-        this.flowerGroupSelected = $event;
-        this.toggleState();
-        setTimeout(() => this.toggleState(), 200);        
-  }
+//   onFlowerGroupFilter($event)
+//   {
+//         this.flowerGroupSelected = $event;
+//         this.toggleState();
+//         setTimeout(() => this.toggleState(), 200);        
+//   }
 
   onFlowerSmellFilter($event)
   {

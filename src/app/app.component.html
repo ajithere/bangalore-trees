@@ -1,10 +1,10 @@
 <!--The whole content below can be removed with the new code.-->
 <toolbar-default (btnClick)="onClearAll($event)"></toolbar-default>
-<flower-property (btnClick)="onFlowerColorFilter($event)" (btnClick1)="onFlowerSizeFilter($event)" 
-(btnClick2)="onFlowerGroupFilter($event)" (btnClick3)="onFlowerSmellFilter($event)" ></flower-property>
+<flower-property (btnClick)="onFlowerColorFilter($event)" 
+                  (btnClick1)="onFlowerSizeFilter($event)" 
+                  (btnClick2)="onFlowerSmellFilter($event)" ></flower-property>
 <div *ngFor="let treeData of treeDataList | filterFlowerColor:flowerColorSelected 
                                           | filterFlowerSize:flowerSizeSelected 
-                                          | filterFlowerGroup:flowerGroupSelected 
                                           | filterFlowerSmell:flowerSmellSelected; 
                                           index as i; count as c;">
   <tree-details [treeData]="treeData" [index]="i+1" [count]="c" [toggleFlag]="toggleFlag"></tree-details>

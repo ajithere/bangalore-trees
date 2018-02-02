@@ -13,7 +13,7 @@ import {MatSnackBar} from '@angular/material';
     template: `
  
         <p><mat-card class="filterCard" (swipeleft)="swipe(0, $event.type)" (swiperight)="swipe(0, $event.type)">
-            <div class="filterCountNum" [@flowerColorAnim]="state"><h6>  {{filterCount + 1}} of 4</h6></div>
+            <div class="filterCountNum" [@flowerColorAnim]="state"><h6>  {{filterCount + 1}} of 3</h6></div>
   
             <div  *ngIf="filterCount == 0" [@fadeInOut]> 
                 <div class="filterContainer"> 
@@ -66,22 +66,7 @@ import {MatSnackBar} from '@angular/material';
                         <mdl-radio name="group1" value="Reset" [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Not Sure</mdl-radio>                        
                 </div>
             </div>
-            
             <div *ngIf="filterCount == 2" [@fadeInOut]>                
-                <div class="filterContainer">             
-                    <div class="question">                                                                        
-                        <mat-card-header>
-                            <mat-card-title class="title"><h3>Flowers in Cluster or Individual?</h3></mat-card-title>
-                        </mat-card-header>
-                    </div>                
-                </div>
-                <div class="buttons">
-                    <mdl-radio name="group2" value="S"  [(ngModel)]="radioOptionCluster" (click)="OnClusterClick()" mdl-ripple>Single</mdl-radio>
-                    <mdl-radio name="group2" value="C" [(ngModel)]="radioOptionCluster" (click)="OnClusterClick()" mdl-ripple>Cluster</mdl-radio>                        
-                    <mdl-radio name="group2" value="Reset"  [(ngModel)]="radioOptionCluster" (click)="OnClusterClick()" mdl-ripple>Not Sure</mdl-radio>
-                </div>
-            </div>
-            <div *ngIf="filterCount == 3" [@fadeInOut]>                
                 <div class="filterContainer">             
                     <div>                                                                        
                         <mat-card-header>
@@ -159,7 +144,7 @@ export class FlowerPropertyComponent {
     radioOptionCluster: string;
     radioOptionSmell: string;
     filterCount = 0;
-    value = 25;
+    value = 34;
     state = 'inactive';
     color = 'primary';
     mode = 'determinate';
@@ -170,7 +155,6 @@ export class FlowerPropertyComponent {
     @Output() btnClick = new EventEmitter(); //this.em;
     @Output() btnClick1 = new EventEmitter(); //this.em;
     @Output() btnClick2 = new EventEmitter(); //this.em;
-    @Output() btnClick3 = new EventEmitter(); //this.em;    
    
     toggleState(){
         this.state = (this.state === 'active' ? 'inactive' : 'active');
@@ -209,13 +193,13 @@ export class FlowerPropertyComponent {
           this.btnClick1.emit({flwsize: this.radioOptionSize});
     }
     //Group filters
-    OnClusterClick()
-    {
-        this.btnClick2.emit({ClusterOrSingle: this.radioOptionCluster});
-    }
+    // OnClusterClick()
+    // {
+    //     this.btnClick2.emit({ClusterOrSingle: this.radioOptionCluster});
+    // }
     OnSmellClick()
     {
-        this.btnClick3.emit({flwsmell: this.radioOptionSmell});
+        this.btnClick2.emit({flwsmell: this.radioOptionSmell});
     }
 
     swipe(currentIndex: number, action = this.SWIPE_ACTION.RIGHT){
@@ -230,13 +214,13 @@ export class FlowerPropertyComponent {
     OnLeftClick(){
         if(this.filterCount > 0){
             this.filterCount--;
-            this.value -= 25;
+            this.value -= 33;
         }
     }
     OnRightClick(){
-        if(this.filterCount < 3){
+        if(this.filterCount < 2){
             this.filterCount++;
-            this.value += 25;
+            this.value += 33;
         }
     }
 }
