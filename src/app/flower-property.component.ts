@@ -61,9 +61,11 @@ import {MatSnackBar} from '@angular/material';
                     </div>
                 </div>
                 <div class="buttons">
-                        <mdl-radio name="group1" value="small"  [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Small</mdl-radio>
-                        <mdl-radio name="group1" value="large"  [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Large</mdl-radio>
-                        <mdl-radio name="group1" value="Reset" [(ngModel)]="radioOptionSize" (click)="OnSizeClick()" mdl-ripple>Not Sure</mdl-radio>                        
+                <mat-radio-group name="example-radio-group">
+                        <mat-radio-button  value="small" (click)="OnSizeClick('small')">Small</mat-radio-button>
+                        <mat-radio-button  value="large" (click)="OnSizeClick('large')">Large</mat-radio-button>
+                        <mat-radio-button  value="Reset" (click)="OnSizeClick('Reset')">Not Sure</mat-radio-button>                        
+                </mat-radio-group>        
                 </div>
             </div>
             <div *ngIf="filterCount == 2" [@fadeInOut]>                
@@ -75,11 +77,13 @@ import {MatSnackBar} from '@angular/material';
                     </div>                
                 </div>
                 <div class="buttons">
-                    <mdl-radio name="group2" value="Highly"  [(ngModel)]="radioOptionSmell" (click)="OnSmellClick()" mdl-ripple>Fragrant</mdl-radio>
-                    <mdl-radio name="group2" value="Mildly"  [(ngModel)]="radioOptionSmell" (click)="OnSmellClick()" mdl-ripple>Mildly Fragrant</mdl-radio><br>
-                    <mdl-radio name="group2" value="Bad" [(ngModel)]="radioOptionSmell" (click)="OnSmellClick()" mdl-ripple>Bad Smell</mdl-radio>
-                    <mdl-radio name="group2" value="None" [(ngModel)]="radioOptionSmell" (click)="OnSmellClick()" mdl-ripple>No Smell</mdl-radio>                        
-                    <mdl-radio name="group2" value="Reset"  [(ngModel)]="radioOptionSmell" (click)="OnSmellClick()" mdl-ripple>Not Sure</mdl-radio>
+                <mat-radio-group name="example-radio-group1">                
+                    <mat-radio-button value="Highly"  (click)="OnSmellClick('Highly')" >Fragrant</mat-radio-button>
+                    <mat-radio-button value="Mildly"  (click)="OnSmellClick('Mildly')" >Mildly Fragrant</mat-radio-button><br>
+                    <mat-radio-button value="Bad" (click)="OnSmellClick('Bad')" >Bad Smell</mat-radio-button>
+                    <mat-radio-button value="None" (click)="OnSmellClick('None')" >No Smell</mat-radio-button>                        
+                    <mat-radio-button value="Reset" (click)="OnSmellClick('Reset')" >Not Sure</mat-radio-button>
+                </mat-radio-group>                    
                 </div>
             </div>
 
@@ -188,8 +192,9 @@ export class FlowerPropertyComponent {
         document.getElementById("9").style.backgroundColor = "#e0e0e0";                        
     }
     //Flower size filters
-    OnSizeClick()
+    OnSizeClick(flowersize)
     {
+        this.radioOptionSize = flowersize;
           this.btnClick1.emit({flwsize: this.radioOptionSize});
     }
     //Group filters
@@ -197,8 +202,9 @@ export class FlowerPropertyComponent {
     // {
     //     this.btnClick2.emit({ClusterOrSingle: this.radioOptionCluster});
     // }
-    OnSmellClick()
+    OnSmellClick(smell)
     {
+        this.radioOptionSmell = smell;
         this.btnClick2.emit({flwsmell: this.radioOptionSmell});
     }
 

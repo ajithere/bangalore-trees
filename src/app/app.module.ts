@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { HttpModule, JsonpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule, MatChipsModule, 
+import {MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule, MatChipsModule, MatRadioModule, 
         MatRadioGroup, MatRadioButton, MatIconModule, MatProgressBarModule, MatSnackBarModule, MatButtonToggleModule} from '@angular/material';
 import {FlowerPropertyComponent} from './flower-property.component';
 import {ToastComponent} from './flower-property.component'
@@ -15,7 +15,6 @@ import {FilterFlowerColorPipe} from './flowercolor.filter';
 import {FilterFlowerSizePipe} from './flowersize.filter';
 import {FilterFlowerGroupPipe} from './flowergroup.filter';
 import {FilterFlowerSmellPipe} from './flowersmell.filter';
-import { MdlModule } from '@angular-mdl/core';
 import {environment} from '../environments/environment';
 import 'hammerjs';
 import 'hammer-timejs';
@@ -29,7 +28,7 @@ import 'hammer-timejs';
   imports: [
     BrowserModule, FormsModule, BrowserAnimationsModule,MatButtonModule,MatCheckboxModule,
     MatToolbarModule, MatCardModule, MatChipsModule, MatIconModule, MatProgressBarModule, 
-    MatSnackBarModule,MdlModule,MatButtonToggleModule,  
+    MatSnackBarModule,MatButtonToggleModule, MatRadioModule,  
     HttpModule, JsonpModule
   ],
   providers: [{
