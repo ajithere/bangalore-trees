@@ -1,0 +1,43 @@
+{
+  "index": "/index.html",
+  "assetGroups": [{
+    "name": "app",
+    "installMode": "prefetch",
+    "resources": {
+      "files": [
+        "/favicon.ico",
+        "/index.html"
+      ],
+      "versionedFiles": [
+        "/*.bundle.css",
+        "/*.bundle.js",
+        "/*.chunk.js"
+      ]
+    }
+  }, {
+    "name": "assets",
+    "installMode": "lazy",
+    "updateMode": "prefetch",
+    "resources": {
+      "files": [
+        "/assets/**"
+      ],
+      "urls": [
+        "https://fonts.googleapis.com/css?family=Material+Icons",  
+        "https://bangaloretrees.herokuapp.com/**" 
+    ]      
+    }
+  }],
+  "dataGroups": [
+    {
+      "name": "api-performance",
+      "urls": ["/api/treelist", "/**"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 2000,
+        "maxAge": "3d",
+        "timeout": "1m"
+      }
+    }
+  ]  
+}

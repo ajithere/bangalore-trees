@@ -2,12 +2,23 @@
 <toolbar-default (btnClick)="onClearAll($event)"></toolbar-default>
 <flower-property (btnClick)="onFlowerColorFilter($event)" 
                   (btnClick1)="onFlowerSizeFilter($event)" 
-                  (btnClick2)="onFlowerSmellFilter($event)" ></flower-property>
+                  (btnClick2)="onFlowerSmellFilter($event)" >
+</flower-property>
 <div *ngFor="let treeData of treeDataList | filterFlowerColor:flowerColorSelected 
                                           | filterFlowerSize:flowerSizeSelected 
                                           | filterFlowerSmell:flowerSmellSelected; 
                                           index as i; count as c;">
-  <tree-details [treeData]="treeData" [index]="i+1" [count]="c" [toggleFlag]="toggleFlag"></tree-details>
+<tree-details [treeData]="treeData" [index]="i+1" [count]="c" [toggleFlag]="toggleFlag">
+
+</tree-details>
   
 </div>
-<div class="copyright"><p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a></p></div>
+<div class="copyright"><p><a rel="license" 
+  href="http://creativecommons.org/licenses/by-sa/4.0/">
+  <img alt="Creative Commons Licence" style="border-width:0" 
+  src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+  <br />This work is licensed under a <a rel="license" 
+  href="http://creativecommons.org/licenses/by-sa/4.0/">
+  Creative Commons Attribution-ShareAlike 4.0 International License</a
+  ></p>
+</div>

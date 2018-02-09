@@ -1,17 +1,35 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var mongodb = require("mongodb");
+var compression = require("compression");
+var fs = require('fs');
 var ObjectID = mongodb.ObjectID;
 
 var TREE_COLLECTION = "blrtrees";
 
 var app = express();
 app.use(bodyParser.json());
+app.use(compression());
 
 // Create link to Angular build directory
 var distDir = __dirname + "/dist/";
-app.use(express.static(distDir));
 
+app.use(express.static(distDir));
+/*const forceSSL = function() {
+    return function (req, res, next) {
+      if (req.headers['x-forwarded-proto'] !== 'https') {
+        return res.redirect(
+         ['https://', req.get('Host'), req.url].join('')
+        );
+      }
+      next();
+    }
+  }
+  // Instruct the app
+  // to use the forceSSL
+  // middleware
+app.use(forceSSL());
+*/
 var db;
 // Connect to the database before starting the application server.
 mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
@@ -25,9 +43,13 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
   console.log("Database connection ready");
 
   // Initialize the app.
-  var server = app.listen(process.env.PORT || 8080, function () {
-    var port = server.address().port;
-    console.log("App now running on port", port);
+  var server = app.listen('/tmp/nginx.socket', function () {
+	if (process.env.DYNO) { 
+		console.log('This is Bangalore Trees on Heroku..!!'); 
+		fs.openSync('/tmp/app-initialized', 'w');
+	 }
+    	var port = server.address().port;
+    	console.log("App now running on port", port);
   });
 });
 
@@ -44,9 +66,9 @@ function handleError(res, reason, message, code) {
  *    POST: creates a new contact
  */
 app.get("/api/treelist", function(req, res) {
-    db.collection(TREE_COLLECTION).find({}).toArray(function(err, docs) {
+    db.collection(TREE_COLLECTION).find({}).sort( { Order3: 1 } ).toArray(function(err, docs) {
         if (err) {
-        handleError(res, err.message, "Failed to get contacts.");
+        handleError(res, err.message, "Failed to get tree List.");
         } else {
         res.status(200).json(docs);
         }

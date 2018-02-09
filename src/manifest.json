@@ -4,12 +4,14 @@
     "name": "Bangalore Trees",
     "scope": "/",
     "display": "standalone",
-    "start_url": "./?utm_source=web_app_manifest",
+    "start_url": "/",
     "short_name": "BTree",
     "description": "",
     "orientation": "any",
     "related_applications": [],
     "prefer_related_applications": false,
+    "theme_color": "#3F51B5",
+    "background_color": "#FFFFFF",
     "icons": [{
       "src": "/assets/icons/android/android-launchericon-512-512.png",
       "sizes": "512x512"
