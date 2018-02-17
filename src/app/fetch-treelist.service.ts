@@ -50,7 +50,7 @@ export class  MockTreeListService implements ITreeListService{
                 "EdibleFruit": "N",
                 "FeatureTags": "",
                 "Image": [ "../assets/1.JPG", "../assets/1001.JPG","../assets/1002.JPG","../assets/1003.JPG"], "ImageCredit": ["Dinesh Valke","Dinesh Valke","J M Garg","J M Garg"], 
-		"Description": "This is a sample text which needs to be replaced for each tree later",
+		"Description": "Its a popular city tree as its not nibbled by goats and provides good shade! Seed yields oil which is used for soap making and as an illuminant. The oil is also used to treat scabies, herpes and rheumatism. The fallen flowers can be collected and used as a good manure for plants.",
                 "RareTrees": ""
             },
             {
@@ -69,7 +69,7 @@ export class  MockTreeListService implements ITreeListService{
                 "EdibleFruit": "N",
                 "FeatureTags": "",
                 "Image": [ "../assets/2.JPG","../assets/201.JPG"], "ImageCredit": ["A Ajit", "A Ajit"], 
-		"Description": "This is a sample text which needs to be replaced for each tree later",
+		"Description": "The flower bud contains water because of which children use it as a toy to squirt water on each other! This tree is often mistaken as the flame of the forest tree by many. The hard central part of the fruit contains poisonous substance which is used by hunters in Africa to kill animals. The flower attracts birds like Rose ringed parakeets, Mynas, bulbuls and Starlings.",
                 "RareTrees": ""
             },
             {
@@ -88,7 +88,7 @@ export class  MockTreeListService implements ITreeListService{
                 "EdibleFruit": "N",
                 "FeatureTags": "",
                 "Image": [ "../assets/3.JPG","../assets/301.JPG","../assets/302.JPG"], "ImageCredit": ["A Ajit","Dinesh Valke","Kolumbusjogger"], 
-		"Description": "This is a sample text which needs to be replaced for each tree later",
+		"Description": "Its an ornamental tree native to South America and is grown all over the world because of it profuse flowering. Purple panic is a term for student stress during the period late spring and early summer used by students in south east Queensland. The purple refers to the colour of the flowers of Jacaranda trees which bloom at that time! The panic refers to the need to be completing assignments and studying for final exams.",
                 "RareTrees": ""
             },
             {
